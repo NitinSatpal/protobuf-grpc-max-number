@@ -1,18 +1,18 @@
 The project is about creating client server architecture using protocol buffers with grpc.
 
-#How it works?
+# How it works?
 
 The system allows client to get the maximum numbers from the stream of numbers it can send to the server. The client sends hello to server with public key. The server responds with its own public key as the confirmation of connection establishment.
 Thereafter, the can exhange the stream of numbers with client send encrypted numbers with it's private key and server returning the maximum number till now for that client.
 
 
-#How to run?
+# How to run?
 
-##server
+## server
 
 go run *.go
 
-##client
+## client
 
 Run `go run client.go config.go main.go reader.go utils.go writer.go --help` to show help
 
