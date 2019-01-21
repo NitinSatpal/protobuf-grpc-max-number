@@ -9,9 +9,11 @@ Thereafter, the can exhange the stream of numbers with client send encrypted num
 How to run!
 
 server
+
 go run *.go
 
 client
+
 Run `go run client.go config.go main.go reader.go utils.go writer.go --help` to show help
 
 there are two mode for running the client
