@@ -9,7 +9,6 @@ Thereafter, the can exhange the stream of numbers with client send encrypted num
 How to run!
 
 server
-
 go run *.go
 
 client
