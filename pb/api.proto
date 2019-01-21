@@ -1,0 +1,55 @@
+syntax = "proto3";
+
+package pb;
+
+service Service {
+    rpc Message(stream ClientMessage) returns (stream ServerMessage);
+}
+
+
+message ClientHello {
+    int64 id = 1;
+    bytes public_id = 2;
+}
+
+message ClientNumber {
+    int64 id = 1;
+    // double number = 2;
+    bytes number = 2;
+}
+
+message ClientCurrentMaxNumber {
+    int64 id = 1;
+}
+
+message ClientResetCurrentMaxNumber {
+    int64 id = 1;
+}
+
+message ClientMessage {
+    oneof Message {
+        ClientHello hello = 1;
+        ClientNumber number = 2;
+        ClientCurrentMaxNumber current_max_number = 3;
+        ClientResetCurrentMaxNumber reset_current_max_number = 4;
+    }
+}
+
+message ServerHi {
+    int64 id = 1;
+    bytes public_id = 2;
+}
+
+message ServerNumber {
+    int64 id = 1;
+    // double number = 2;
+    bytes number = 2;
+}
+
+
+message ServerMessage {
+    oneof Message {
+        ServerHi hi = 1;
+        ServerNumber number = 2;
+    }
+}
