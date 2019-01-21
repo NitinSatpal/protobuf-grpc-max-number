@@ -16,7 +16,7 @@ client
 
 Run `go run client.go config.go main.go reader.go utils.go writer.go --help` to show help
 
-there are two mode for running the client
+There are two mode for running the client
 - the first is to read numbers from stdin, to run the client in this mode run: 
     `go run client.go config.go main.go reader.go utils.go writer.go`
 - the other mode is to take numbers from a file, to run the client in this mode run:
