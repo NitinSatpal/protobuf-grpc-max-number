@@ -11,7 +11,10 @@ Thereafter, the can exhange the stream of numbers with client send encrypted num
 
 ## server
 
-go run *.go
+Run `go run *.go --help` to show help
+
+To run with a specific port, run:
+    `go run *.go --port :3001`
 
 ## client
 
