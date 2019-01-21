@@ -1,3 +1,6 @@
+# Prerequisites
+go1.11.4
+
 The project is about creating client server architecture using protocol buffers with grpc.
 
 # How it works?
